@@ -1,0 +1,292 @@
+{
+    "contractName": "ZombieFactory",
+    "abi": [
+        {
+            "inputs": [],
+            "stateMutability": "nonpayable",
+            "type": "constructor"
+        },
+        {
+            "anonymous": false,
+            "inputs": [
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "previousOwner",
+                    "type": "address"
+                },
+                {
+                    "indexed": true,
+                    "internalType": "address",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "OwnershipTransferred",
+            "type": "event"
+        },
+        {
+            "inputs": [],
+            "name": "checkDeployTest",
+            "outputs": [
+                {
+                    "internalType": "bool",
+                    "name": "",
+                    "type": "bool"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [],
+            "name": "owner",
+            "outputs": [
+                {
+                    "internalType": "address",
+                    "name": "",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "address payable",
+                    "name": "newOwner",
+                    "type": "address"
+                }
+            ],
+            "name": "transferOwnership",
+            "outputs": [],
+            "stateMutability": "nonpayable",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.8.19+commit.7dd6d404\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"previousOwner\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"OwnershipTransferred\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"checkDeployTest\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"owner\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address payable\",\"name\":\"newOwner\",\"type\":\"address\"}],\"name\":\"transferOwnership\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{\"transferOwnership(address)\":{\"details\":\"Allows the current owner to transfer control of the contract to a newOwner.\",\"params\":{\"newOwner\":\"The address to transfer ownership to.\"}}},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Users/fudongguang/git/test/sol-test/contracts/ZombieFactory.sol\":\"ZombieFactory\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/fudongguang/git/test/sol-test/contracts/Ownable.sol\":{\"keccak256\":\"0xedafc58751b8a5986909fc36542923d6a60ef2e9c7b6cdaae433ecc162878305\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://d46247d54099119b67f12dd20a1316eaa4c6343eef2461602687610c2194ecf1\",\"dweb:/ipfs/QmTUK7FE7BBDoCJfZ2BJvHZXLYddbW7KVd6LMneSPp5ZAm\"]},\"/Users/fudongguang/git/test/sol-test/contracts/SafeMath.sol\":{\"keccak256\":\"0x1255fd9a810387f38025d94db384325a402cd0dff6635402e19f725a36097d70\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://aa4b29497f344d29eece3dfb8b0b28e3618e63b4a9a9a3ffd929c3c7805732c2\",\"dweb:/ipfs/QmWWGWeHc9XLdQ6oBeGy8L187iheya3trGonRsDRdrWZLw\"]},\"/Users/fudongguang/git/test/sol-test/contracts/ZombieFactory.sol\":{\"keccak256\":\"0x91271f18ec7cafd55bf74dacf57118d6ed8b29ac7f095507217da1a4bd6f626a\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://6e02dadbdf5485789df45cde6d5198e5d9ceed9451a51609085cf483384b74a3\",\"dweb:/ipfs/QmdNiq7HvSzgc1LTJWJPUk5y6qVK8SE9FVzptBxkDssdzj\"]}},\"version\":1}",
+    "bytecode": "60806040526000805460ff60a01b1916905534801561001d57600080fd5b50600080546001600160a01b031916331790556102118061003f6000396000f3fe608060405234801561001057600080fd5b50600436106100415760003560e01c8063206c8db4146100465780638da5cb5b1461006f578063f2fde38b1461009a575b600080fd5b60005461005a90600160a01b900460ff1681565b60405190151581526020015b60405180910390f35b600054610082906001600160a01b031681565b6040516001600160a01b039091168152602001610066565b6100ad6100a83660046101ab565b6100af565b005b6000546001600160a01b031633146101045760405162461bcd60e51b815260206004820152601360248201527226bab9ba1031b7b73a3930b1ba1037bbb732b960691b60448201526064015b60405180910390fd5b6001600160a01b0381166101505760405162461bcd60e51b815260206004820152601360248201527226bab9ba1031b7b73a3930b1ba1037bbb732b960691b60448201526064016100fb565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156101bd57600080fd5b81356001600160a01b03811681146101d457600080fd5b939250505056fea26469706673582212205424100be9513bf42b85445523bf90ecd391add8bc9f0d47f39f3cd27529443764736f6c63430008130033",
+    "deployedBytecode": "608060405234801561001057600080fd5b50600436106100415760003560e01c8063206c8db4146100465780638da5cb5b1461006f578063f2fde38b1461009a575b600080fd5b60005461005a90600160a01b900460ff1681565b60405190151581526020015b60405180910390f35b600054610082906001600160a01b031681565b6040516001600160a01b039091168152602001610066565b6100ad6100a83660046101ab565b6100af565b005b6000546001600160a01b031633146101045760405162461bcd60e51b815260206004820152601360248201527226bab9ba1031b7b73a3930b1ba1037bbb732b960691b60448201526064015b60405180910390fd5b6001600160a01b0381166101505760405162461bcd60e51b815260206004820152601360248201527226bab9ba1031b7b73a3930b1ba1037bbb732b960691b60448201526064016100fb565b600080546040516001600160a01b03808516939216917f8be0079c531659141344cd1fd0a4f28419497f9722a3daafe3b4186f6b6457e091a3600080546001600160a01b0319166001600160a01b0392909216919091179055565b6000602082840312156101bd57600080fd5b81356001600160a01b03811681146101d457600080fd5b939250505056fea26469706673582212205424100be9513bf42b85445523bf90ecd391add8bc9f0d47f39f3cd27529443764736f6c63430008130033",
+    "sourceMap": "115:136:2:-:0;;;217:5;187:35;;-1:-1:-1;;;;187:35:2;;;229:20;;;;;;;;;-1:-1:-1;526:5:0;:18;;-1:-1:-1;;;;;;526:18:0;534:10;526:18;;;115:136:2;;;;;;",
+    "deployedSourceMap": "115:136:2:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;187:35;;;;;-1:-1:-1;;;187:35:2;;;;;;;;;179:14:3;;172:22;154:41;;142:2;127:18;187:35:2;;;;;;;;277:20:0;;;;;-1:-1:-1;;;;;277:20:0;;;;;;-1:-1:-1;;;;;370:32:3;;;352:51;;340:2;325:18;277:20:0;206:203:3;881:204:0;;;;;;:::i;:::-;;:::i;:::-;;;679:5;;-1:-1:-1;;;;;679:5:0;665:10;:19;657:50;;;;-1:-1:-1;;;657:50:0;;915:2:3;657:50:0;;;897:21:3;954:2;934:18;;;927:30;-1:-1:-1;;;973:18:3;;;966:49;1032:18;;657:50:0;;;;;;;;;-1:-1:-1;;;;;965:22:0;::::1;957:53;;;::::0;-1:-1:-1;;;957:53:0;;915:2:3;957:53:0::1;::::0;::::1;897:21:3::0;954:2;934:18;;;927:30;-1:-1:-1;;;973:18:3;;;966:49;1032:18;;957:53:0::1;713:343:3::0;957:53:0::1;1042:5;::::0;;1021:37:::1;::::0;-1:-1:-1;;;;;1021:37:0;;::::1;::::0;1042:5;::::1;::::0;1021:37:::1;::::0;::::1;1064:5;:16:::0;;-1:-1:-1;;;;;;1064:16:0::1;-1:-1:-1::0;;;;;1064:16:0;;;::::1;::::0;;;::::1;::::0;;881:204::o;414:294:3:-;481:6;534:2;522:9;513:7;509:23;505:32;502:52;;;550:1;547;540:12;502:52;576:23;;-1:-1:-1;;;;;628:31:3;;618:42;;608:70;;674:1;671;664:12;608:70;697:5;414:294;-1:-1:-1;;;414:294:3:o",
+    "sourcePath": "/Users/fudongguang/git/test/sol-test/contracts/ZombieFactory.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.8.19+commit.7dd6d404"
+    },
+    "ast": {
+        "absolutePath": "/Users/fudongguang/git/test/sol-test/contracts/ZombieFactory.sol",
+        "exportedSymbols": {
+            "Ownable": [
+                62
+            ],
+            "SafeMath": [
+                165
+            ],
+            "ZombieFactory": [
+                182
+            ]
+        },
+        "id": 183,
+        "license": "MIT",
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 167,
+                "literals": [
+                    "solidity",
+                    ">=",
+                    "0.8",
+                    ".0",
+                    "<",
+                    "0.9",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "32:31:2"
+            },
+            {
+                "absolutePath": "/Users/fudongguang/git/test/sol-test/contracts/Ownable.sol",
+                "file": "./Ownable.sol",
+                "id": 168,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 183,
+                "sourceUnit": 63,
+                "src": "65:23:2",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "absolutePath": "/Users/fudongguang/git/test/sol-test/contracts/SafeMath.sol",
+                "file": "./SafeMath.sol",
+                "id": 169,
+                "nameLocation": "-1:-1:-1",
+                "nodeType": "ImportDirective",
+                "scope": 183,
+                "sourceUnit": 166,
+                "src": "89:24:2",
+                "symbolAliases": [],
+                "unitAlias": ""
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "baseName": {
+                            "id": 170,
+                            "name": "Ownable",
+                            "nameLocations": [
+                                "141:7:2"
+                            ],
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 62,
+                            "src": "141:7:2"
+                        },
+                        "id": 171,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "141:7:2"
+                    }
+                ],
+                "canonicalName": "ZombieFactory",
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "fullyImplemented": true,
+                "id": 182,
+                "linearizedBaseContracts": [
+                    182,
+                    62
+                ],
+                "name": "ZombieFactory",
+                "nameLocation": "124:13:2",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "global": false,
+                        "id": 174,
+                        "libraryName": {
+                            "id": 172,
+                            "name": "SafeMath",
+                            "nameLocations": [
+                                "161:8:2"
+                            ],
+                            "nodeType": "IdentifierPath",
+                            "referencedDeclaration": 165,
+                            "src": "161:8:2"
+                        },
+                        "nodeType": "UsingForDirective",
+                        "src": "155:27:2",
+                        "typeName": {
+                            "id": 173,
+                            "name": "uint256",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "174:7:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                            }
+                        }
+                    },
+                    {
+                        "constant": false,
+                        "functionSelector": "206c8db4",
+                        "id": 177,
+                        "mutability": "mutable",
+                        "name": "checkDeployTest",
+                        "nameLocation": "199:15:2",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 182,
+                        "src": "187:35:2",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                        },
+                        "typeName": {
+                            "id": 175,
+                            "name": "bool",
+                            "nodeType": "ElementaryTypeName",
+                            "src": "187:4:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                            }
+                        },
+                        "value": {
+                            "hexValue": "66616c7365",
+                            "id": 176,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "217:5:2",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_bool",
+                                "typeString": "bool"
+                            },
+                            "value": "false"
+                        },
+                        "visibility": "public"
+                    },
+                    {
+                        "body": {
+                            "id": 180,
+                            "nodeType": "Block",
+                            "src": "242:7:2",
+                            "statements": []
+                        },
+                        "id": 181,
+                        "implemented": true,
+                        "kind": "constructor",
+                        "modifiers": [],
+                        "name": "",
+                        "nameLocation": "-1:-1:-1",
+                        "nodeType": "FunctionDefinition",
+                        "parameters": {
+                            "id": 178,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "240:2:2"
+                        },
+                        "returnParameters": {
+                            "id": 179,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "242:0:2"
+                        },
+                        "scope": 182,
+                        "src": "229:20:2",
+                        "stateMutability": "nonpayable",
+                        "virtual": false,
+                        "visibility": "public"
+                    }
+                ],
+                "scope": 183,
+                "src": "115:136:2",
+                "usedErrors": []
+            }
+        ],
+        "src": "32:219:2"
+    },
+    "functionHashes": {
+        "checkDeployTest()": "206c8db4",
+        "owner()": "8da5cb5b",
+        "transferOwnership(address)": "f2fde38b"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "105800",
+            "executionCost": "48612",
+            "totalCost": "154412"
+        },
+        "external": {
+            "checkDeployTest()": "2294",
+            "owner()": "2337",
+            "transferOwnership(address)": "30387"
+        }
+    }
+}
