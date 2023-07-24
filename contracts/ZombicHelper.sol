@@ -5,7 +5,7 @@ import './ZombicFactory.sol';
 
 contract ZombicHelper is ZombicFactory{
     /** 升级费用 */
-    uint leveUpFee = 0.001 ether;
+    uint public leveUpFee = 0.001 ether;
 
     modifier aboveLevel(uint _level,uint _zombicId){
         require(zombics[_zombicId].level>=_level,'error');
